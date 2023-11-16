@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ALL Cars</h1>
+<ul>
+         <%for(let car of cars)
+         {%>
+               <li><%=car.brand%> <%=car.color%>    <a href="/cars/<%=car.id%>">show</a>    <a href="/cars/edit/<%=car.id%>">edit </a></li>
+              
+         <%}%>
+
+</ul>
+<a href="/cars/new">add new car</a>
+</body>
+</html>
